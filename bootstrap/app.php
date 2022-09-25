@@ -59,13 +59,13 @@ $app->singleton(
 
 # ENV detection
 $host = '';
-$env = '.app.env';
+$env = '.dashboard.env';
 if (isset($_SERVER['HTTP_HOST'])) 
     $host = $_SERVER['HTTP_HOST'];
 
 # Dashboard
-if (strpos($host, 'dashboard.') !== false)
-    $env = '.dashboard.env';
+if (strpos($host, 'app.') !== false)
+    $env = '.app.env';
 
 $app->loadEnvironmentFrom('env/'.$env); 
 
