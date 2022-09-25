@@ -55,22 +55,19 @@ $app->singleton(
 
 
 
+
+
 # ENV detection
 $host = '';
-$env = '.website.env';
+$env = '.app.env';
 if (isset($_SERVER['HTTP_HOST'])) 
     $host = $_SERVER['HTTP_HOST'];
 
-# App Portal
-if (strpos($host, 'app.') !== false)
-    $env = '.app.env';
-
-# MSCCS Portal
+# Dashboard
 if (strpos($host, 'dashboard.') !== false)
-    $env = '.msccs.env';
+    $env = '.dashboard.env';
 
 $app->loadEnvironmentFrom('env/'.$env); 
-
 
 
 return $app;

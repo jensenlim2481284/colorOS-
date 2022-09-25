@@ -1,0 +1,78 @@
+.explore{
+    background: linear-gradient(39deg, #0007dd, #78e7ff);
+    padding: 50px;
+    border-radius: 15px;
+    margin-bottom: 50px;
+    color: white !important;
+}
+
+.explore h1{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+.explore p{
+    font-size: 13px;
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+.input-group {
+    max-width: 300px;
+}
+
+.api-tt{
+    display: flex;
+    align-items: center;
+        border-bottom: 1px solid #dcdcdc;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+.api-tt img{
+    width: 40px;
+}
+.api-tt h2{
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 0;
+    margin-left: 10px;
+}
+.api-parent{
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+.api-child .item{
+    padding: 15px;
+    background-color: rgb(243, 244, 248);
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    display: flex;
+    height: 150px;
+    transition: 0.4s all;
+}
+
+.api-child .item:hover{
+    transform: scale(1.04);
+}
+.api-child .item h4{
+    font-size: 16px;
+    margin-bottom: 0;
+    font-weight: 700;
+}
+.api-child .item p{
+    font-size: 12px;
+    opacity: 0.9;
+}
+
+.api-child span{
+    background-color: rgb(76, 105, 247);
+    font-size: 8px;
+    font-weight: 600;
+    padding: 3px 6px;
+    border-radius: 35px;
+    color: white;
+}

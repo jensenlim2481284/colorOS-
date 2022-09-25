@@ -4,26 +4,26 @@ const mix = require('laravel-mix');
 
 /************************************************ 
     
-                    WEBSITE
+                    APP
 
 ************************************************/
 
 
-mix.styles([
-    'public/css/plugin/animate.min.css',
-    'public/css/plugin/bootstrap.min.css',
-    'public/css/plugin/themify.css',
-    'public/css/page/general.css',
-    'public/css/page/website/index.css',
-], 'public/css/prod/website/index.min.css');
+// mix.styles([
+//     'public/css/plugin/animate.min.css',
+//     'public/css/plugin/bootstrap.min.css',
+//     'public/css/plugin/themify.css',
+//     'public/css/page/general.css',
+//     'public/css/page/website/index.css',
+// ], 'public/css/prod/website/index.min.css');
 
-mix.scripts([
-    'public/js/plugin/jquery.min.js',
-    'public/js/plugin/sweetalert.min.js',
-    'public/js/plugin/wow.min.js',
-    'public/js/plugin/fontfile.js',
-    'public/js/page/general.js',
-], 'public/js/prod/website/index.min.js')
+// mix.scripts([
+//     'public/js/plugin/jquery.min.js',
+//     'public/js/plugin/sweetalert.min.js',
+//     'public/js/plugin/wow.min.js',
+//     'public/js/plugin/fontfile.js',
+//     'public/js/page/general.js',
+// ], 'public/js/prod/website/index.min.js')
 
 
 
@@ -31,31 +31,28 @@ mix.scripts([
 
 /*****************************************************
 
-                 MSCCS WEBPACK
+                 DASHBOARD WEBPACK
 
 *****************************************************/
 
 mix.styles(
     [
         "public/css/plugin/animation.css",
-        "public/css/page/msccs/nav.css",
-        "public/css/page/msccs/index.css",
+        "public/css/page/dashboard/nav.css",
+        "public/css/page/dashboard/index.css",
         "public/css/page/general.css",
-        "public/css/page/component/chart.css",
         "public/css/plugin/chart.min.css",
-        "public/css/page/component/panel.css",
     ],
-    "public/css/prod/msccs/index.min.css"
+    "public/css/prod/dashboard/index.min.css"
 );
 
 mix.scripts(
     [
-        "public/js/page/msccs/nav.js",
-        "public/js/plugin/chart.min.js",
-        "public/js/page/msccs/index.js",        
+        "public/js/page/dashboard/nav.js",
+        "public/js/page/dashboard/index.js",        
         "public/js/page/general.js"
     ],
-    "public/js/prod/msccs/index.min.js"
+    "public/js/prod/dashboard/index.min.js"
 );
 
 

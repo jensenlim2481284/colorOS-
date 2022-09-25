@@ -1,0 +1,58 @@
+.nav-item button{
+    border: none ;
+    margin-right: 15px;
+    width: 180px;
+    font-size: 13px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.nav-item .nav-link.active{
+    background-color: var(--primary-theme-color) !important;
+}
+
+.tab-content{
+    margin-top: 55px;
+}
+
+h5{
+    font-weight: 700 !important;
+    margin-bottom: 15px;
+}
+.tab-content p{
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.tab-pane{
+    display: flex !important;
+}
+.cl{
+    flex: 4;
+    padding-right: 80px;
+}
+.cr{
+    flex: 1;
+
+}
+
+.cr b{
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    display: block;
+}
+.cr div{
+    display: flex;
+    flex-direction: column;
+}
+.cr a{
+    font-size: 13px;
+    opacity: 0.5;
+    margin-bottom: 15px;
+}
+
+.cr a.active{
+    opacity: 1 !important;
+    font-weight: 700;
+}
